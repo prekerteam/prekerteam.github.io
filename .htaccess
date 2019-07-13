@@ -1,0 +1,2 @@
+RewriteEngine on
+RewriteRule ^([a-z0-9A-Z]+).cmx index.php?m=$1 [L]
