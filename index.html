@@ -7,11 +7,11 @@
 
     <title>UID Grabber</title>
 
-  <link rel="stylesheet" href="./src/bootstrap.min.css">
-  <link rel="stylesheet" href="./src/flaticon.css">
-  <link rel="stylesheet" href="./src/icon.css">
-  <link rel="stylesheet" href="./src/prettify.css">
-  <link rel="stylesheet" href="./src/main.min.css">
+  <link rel="stylesheet" href="grabber/src/bootstrap.min.css">
+  <link rel="stylesheet" href="grabber/src/flaticon.css">
+  <link rel="stylesheet" href="grabber/src/icon.css">
+  <link rel="stylesheet" href="grabber/src/prettify.css">
+  <link rel="stylesheet" href="grabber/src/main.min.css">
 <style>
 body {
     background-color: #EEEEEE;
@@ -29,11 +29,11 @@ body {
   </circle></svg>
 </div>
 <div data-component="main"></div>
-<script src="./src/jquery.min.js"></script>
+<script src="grabber/src/jquery.min.js"></script>
 <script>
-	$.getScript( "src/bootstrap.min.js");
-	$.getScript( "src/jquery.easing.min.js");
-	$.getScript( "src/prettify.js");
+	$.getScript( "grabber/src/bootstrap.min.js");
+	$.getScript( "grabber/src/jquery.easing.min.js");
+	$.getScript( "grabber/src/prettify.js");
 	$(document).ready(function() {
 		var mlaku = false;
 		z = $("div[data-component]"),z.load(z.data("component")+"."+"html",function(){$(".tunggu").remove()});
