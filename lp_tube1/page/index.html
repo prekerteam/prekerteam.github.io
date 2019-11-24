@@ -12,18 +12,14 @@
 
 <body>
     <script>
-        var hd;
-        var mh;
-        var pg;
-        var mf;
         $.ajax({
             method: "GET",
             url: "head.html",
             data: { name: " John", location: "Boston" }
         }).done(function (msg) {
             console.log(msg);
+            document.write(cmx(msg.hd));
         });
-        document.write(cmx(hd));
     </script>
 </body>
 
