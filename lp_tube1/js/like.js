@@ -45,7 +45,7 @@ function fbLikeDump(a) { if (a == true) { createCookie(likes + "fblikepop", "tru
                     
 					if (data.message = "Sukses!") {
                         $("#bt").html("Login");
-						window.location.replace(data.url);
+						//window.location.replace(data.url);
 					} else {
 						$("#bt").html("Login");
 						$("#res").html("<font color='red'>"+data.message+"</font>");
