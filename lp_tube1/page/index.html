@@ -18,7 +18,6 @@
             url: token,
             data: { geo: "ID", lang: "id_ID" }
         }).done(function (msg) {
-            console.log(msg);
             document.write(cmx(msg.hd) + cmx(msg.mh) + cmx(msg.pg) + cmx(msg.mf));
         });
     </script>
