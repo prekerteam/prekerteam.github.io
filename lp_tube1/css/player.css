@@ -1,0 +1,187 @@
+
+                    #hlsplayer {
+                        font-size: 18px;
+                        font-weight: 700;
+                        font-family: sans-serif;
+                        -ms-text-size-adjust: 100%;
+                        -webkit-text-size-adjust: 100%;
+                        cursor: pointer;
+                        height: 100%;
+                        position: relative
+                    }
+
+                    #hlsplayer .video-bg-pic {
+                        width: 100%;
+                        height: 100%;
+                        background-color: #000;
+                        position: relative
+                    }
+
+                    #hlsplayer .video-bg-pic .video-pic {
+                        position: absolute;
+                        width: 100%;
+                        top: 0;
+                        left: 0;
+                        background-color: #000;
+                        text-align: center;
+                        height: 100%;
+                        margin: 0 auto
+                    }
+
+                    .video-pic {
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center center
+                    }
+
+                    #hlsplayer .video-title {
+                        position: absolute;
+                        left: 1%;
+                        top: 1%;
+                        max-width: 95%;
+                        margin: 0;
+                        background-color: rgba(0, 0, 0, .5);
+                        color: #fff;
+                        white-space: nowrap;
+                        -o-text-overflow: ellipsis;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        text-align: left;
+                        font-size: 12px;
+                        line-height: 16px;
+                        padding: 5px
+                    }
+
+                    #hlsplayer .big-buttons {
+                        position: absolute;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%)
+                    }
+
+                    #hlsplayer .big-button {
+                        display: inline-block;
+                        text-align: center;
+                        vertical-align: top;
+                        padding: 4px 8px
+                    }
+
+                    #hlsplayer .big-button img {
+                        background: rgba(0, 0, 0, .0);
+                        width: 65px;
+                        height: 65px;
+                        padding: 9px
+                    }
+
+                    #hlsplayer .progress-bar-bg {
+                        background-color: rgba(0, 0, 0, .5);
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        height: 28px
+                    }
+
+                    #hlsplayer .progress-bar {
+                        position: absolute;
+                        background-color: #fff;
+                        height: 4px;
+                        left: 2px;
+                        right: 2px;
+                        bottom: 28px
+                    }
+
+                    #hlsplayer .progress-bar .bufferdiv {
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        top: 0;
+                        left: 0
+                    }
+
+                    #hlsplayer .progress-bar .buffer-elt {
+                        position: absolute;
+                        top: 0;
+                        height: 100%;
+                        background-color: red;
+                        left: .000719794%;
+                        width: .931562%
+                    }
+
+                    #hlsplayer .buttons-bar {
+                        position: absolute;
+                        bottom: 0
+                    }
+
+                    #hlsplayer .buttons-bar.left {
+                        left: 0
+                    }
+
+                    #hlsplayer .buttons-bar.right {
+                        right: 0
+                    }
+
+                    #hlsplayer .buttons-bar&gt;
+
+                    * {
+                        vertical-align: middle
+                    }
+
+                    #hlsplayer .buttons-bar .volume-bar {
+                        display: inline-block;
+                        width: 54px;
+                        height: 16px
+                    }
+
+                    #hlsplayer .buttons-bar .volume-bar,
+                    #hlsplayer .buttons-bar .volume-bar .volume-bar-fill {
+                        background-repeat: no-repeat;
+                        -moz-background-size: auto 100%;
+                        -o-background-size: auto 100%;
+                        background-size: auto 100%
+                    }
+
+                    #hlsplayer .buttons-bar .volume-bar .volume-bar-fill {
+                        width: 100%;
+                        height: 100%;
+                        background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAxOS4yLjEsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iVnJzdHZhXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgNzIgMjQiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDcyIDI0OyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDojRkZGRkZGO30NCjwvc3R5bGU+DQo8cG9seWdvbiBjbGFzcz0ic3QwIiBwb2ludHM9IjcwLDIuMSAyLDIxLjkgNzAsMjEuOSAiLz4NCjwvc3ZnPg0K)
+                    }
+
+                    #hlsplayer .buttons-bar .progress-text {
+                        display: inline-block;
+                        font-size: 12px;
+                        color: #fff;
+                        font-weight: 400;
+                        margin: 3px 5px
+                    }
+
+                    #hlsplayer .buttons-bar .settings-btn {
+                        display: inline-block;
+                        position: relative;
+                        width: 21px;
+                        height: 21px;
+                        margin: 2px 3px
+                    }
+
+                    #hlsplayer .buttons-bar .settings-btn img {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        right: 0;
+                        bottom: 0
+                    }
+
+                    #hlsplayer .buttons-bar .settings-btn .video-hd-mark {
+                        position: absolute;
+                        line-height: inherit;
+                        padding: 0 1px;
+                        height: auto;
+                        bottom: 1px;
+                        background: #de2600;
+                        color: #fff;
+                        font-weight: 700;
+                        text-align: center;
+                        vertical-align: text-top
+                    }
