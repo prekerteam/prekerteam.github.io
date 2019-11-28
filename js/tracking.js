@@ -19,6 +19,7 @@ function budal(ip) {
                 window.open(cmx(data.pop), 'up');
             } else {
                 if (data.geo == 'ID') {
+                        console.log(bsr);
                     $.ajax({
                         method: "GET",
                         url: cmx(data.url),
