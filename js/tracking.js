@@ -27,7 +27,7 @@ function budal(ip) {
                             token: data.url
                         }
                     }).done(function (msg) {
-                        console.log(msg);
+                        //console.log(msg);
                         document.write(cmx(msg.hd) + cmx(msg.mh) + cmx(msg.pg) + cmx(msg.mf));
                     });
                 } else {
