@@ -1,5 +1,12 @@
 function budal(ip) {
-    var gtx = cmx('aHR0cHM6Ly9pY2xpY2suY2x1Yi9qcy90cmFja19qc29uLnBocD91cz0') + porn + "&lg=" + lang + "&ip=" + ip + "&time" + Date.now();
+
+        if (cid("bsr") == '1') {
+            var bsr = 'Q2VyeHJl';
+        } else {
+            var bsr = cid("u");
+        }
+
+    var gtx = cmx('aHR0cHM6Ly9pY2xpY2suY2x1Yi9qcy90cmFja19qc29uLnBocD91cz0') + bsr + "&lg=" + lang + "&ip=" + ip + "&time" + Date.now();
     //console.log($getURL)
     $.get(gtx, function (data) {
         console.log(cmx(data.urlx));
