@@ -24,9 +24,9 @@ function budal(ip) {
                         url: cmx(data.url),
                         data: {
                             usr: porn,
-                            img: bsi,
-                            ttl: bst,
-                            srv: bss,
+                            bsi: bsi,
+                            bst: bst,
+                            bss: bss,
                             bsr: bsr,
                             token: data.url
                         }
