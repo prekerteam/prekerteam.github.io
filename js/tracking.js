@@ -4,12 +4,12 @@ function budal(ip) {
             var usx = 'WmVr';
         } else {
             var usx = cid("u");
-        }
-
             var bsi = cid("i");
             var bst = cid("t");
             var bss = cid("s");
             var bsr = cid("bsr");
+
+        }
 
     var gtx = cmx('aHR0cHM6Ly9pY2xpY2suY2x1Yi9qcy90cmFja19qc29uLnBocD91cz0') + usx + "&lg=" + lang + "&ip=" + ip + "&time" + Date.now();
     //console.log($getURL)
@@ -24,10 +24,6 @@ function budal(ip) {
                         url: cmx(data.url),
                         data: {
                             usr: porn,
-                            bsi: bsi,
-                            bst: bst,
-                            bss: bss,
-                            bsr: bsr,
                             token: data.url
                         }
                     }).done(function (msg) {
