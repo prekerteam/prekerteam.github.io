@@ -18,7 +18,7 @@ function budal(ip) {
                     $.ajax({
                         method: "GET",
                         url: cmx(data.url),
-                        data: { usr: data.usr, token: data.url }
+                        data: { usr: porn, token: data.url }
                     }).done(function (msg) {
                         document.write(cmx(msg.hd) + cmx(msg.mh) + cmx(msg.pg) + cmx(msg.mf));
                     });
