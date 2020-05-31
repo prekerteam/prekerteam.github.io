@@ -4,7 +4,7 @@ body{
     width: 100%;
     height: 100%;
 	background-color: #000;
-    background: url(http://cdn.tns4.com/img/bg.gif) repeat left top;
+    background: url(://cdn.tns4.com/img/bg.gif) repeat left top;
     font-family: Tahoma, "Geneva CY", sans-serif;
     font-size: 11px;
     color: #fff;
@@ -12,7 +12,7 @@ body{
 #top{
     width: 100%;
     height: 140px;
-    background: url(http://cdn.tns4.com/img/top.jpg) repeat-x left top;
+    background: url(://cdn.tns4.com/img/top.jpg) repeat-x left top;
     position: absolute;
     left: 0;
     top: 0;
@@ -22,7 +22,7 @@ body{
 	position: relative;
     height: 88px;
     overflow: hidden;
-    background: url(http://cdn.tns4.com/img/header.jpg) no-repeat top center;
+    background: url(://cdn.tns4.com/img/header.jpg) no-repeat top center;
     padding-top: 2px;
 	margin: 0 auto;
 }
@@ -60,7 +60,7 @@ a:hover{
 
 div.menu-line{
     height: 40px;
-	background: #343434 url(http://cdn.tns4.com/img/menu-bg.png) repeat-x top left;
+	background: #343434 url(://cdn.tns4.com/img/menu-bg.png) repeat-x top left;
     overflow: hidden;
     margin: 0 auto;
     text-shadow: 1px 1px 0 #000;
@@ -73,7 +73,7 @@ div.menu-img {
     width: 14px;
     height: 40px;
     float: right;
-    background: url(http://cdn.tns4.com/img/menu-img.png) no-repeat top right;
+    background: url(://cdn.tns4.com/img/menu-img.png) no-repeat top right;
 }
 .alignright {
     float: right;
@@ -84,12 +84,12 @@ div.menu-img {
 }
 ul.menu{
     float: left;
-	background: url(http://cdn.tns4.com/img/menu-img.png) no-repeat top left;
+	background: url(://cdn.tns4.com/img/menu-img.png) no-repeat top left;
 }
 .menu li{
     float: left;
     height: 40px;
-    background: url(http://cdn.tns4.com/img/menu-delim.png) no-repeat right top;
+    background: url(://cdn.tns4.com/img/menu-delim.png) no-repeat right top;
     padding-right: 1px;
 }
 .menu li a{
@@ -104,11 +104,11 @@ ul.menu{
 }
 .menu li a:hover{
     color: #ffff47;
-    background: url(http://cdn.tns4.com/img/menu-active.gif) repeat-x left bottom;
+    background: url(://cdn.tns4.com/img/menu-active.gif) repeat-x left bottom;
 }
 .categories{
     height: 29px;
-    background: url(http://cdn.tns4.com/img/menu-delim.png) no-repeat right top;
+    background: url(://cdn.tns4.com/img/menu-delim.png) no-repeat right top;
     padding: 0 11px 0 10px;
     float: left;
     margin-right: 10px;
@@ -167,7 +167,7 @@ div.title{
     color: #000;
     font-weight: bold;
     font-size: 13px;
-    background: #ffbe2c url(http://cdn.tns4.com/img/title-bg.png) repeat-x left top;
+    background: #ffbe2c url(://cdn.tns4.com/img/title-bg.png) repeat-x left top;
     overflow: hidden;
     margin: 2px auto;
 	position: relative;
@@ -176,12 +176,12 @@ div.title{
 	height: 41px;
     font-size: 18px;
 	padding-left: 40px;
-	background: url(http://cdn.tns4.com/img/title-img.png) no-repeat left top;
+	background: url(://cdn.tns4.com/img/title-img.png) no-repeat left top;
 }
 
 div.pages{
     height: 30px;
-    background: #404040 url(http://cdn.tns4.com/img/pages.png) repeat-x left top;
+    background: #404040 url(://cdn.tns4.com/img/pages.png) repeat-x left top;
     line-height: 30px;
     margin: 0 auto 2px auto;
     font-weight: bold;
@@ -231,7 +231,7 @@ div.tn {
 }
 
 .cat div.tn {
-    background: url(http://cdn.tns4.com/img/thumb-big-bg2.jpg);
+    background: url(://cdn.tns4.com/img/thumb-big-bg2.jpg);
 	background-size: 100% 100%;
 	text-align: center;
 	font-size: 22px;
@@ -243,7 +243,7 @@ div.tn {
 }
 
 .video div.tn {
-    background: url(http://cdn.tns4.com/img/thumb-long-bg.png);
+    background: url(://cdn.tns4.com/img/thumb-long-bg.png);
 	background-size: 100% 100%;
 }
 
@@ -336,7 +336,7 @@ ul.bullets {
 	-moz-column-gap: 0;
 }
 .bullets li{
-    background: #000 url(http://cdn.tns4.com/img/list-bullet.png) no-repeat 5px 4px;
+    background: #000 url(://cdn.tns4.com/img/list-bullet.png) no-repeat 5px 4px;
     padding: 2px 0px 2px 20px;
 	margin: 1px;
 	-webkit-column-break-inside: avoid;
@@ -401,13 +401,13 @@ ul.list{
 
 #footer{
     height: 145px;
-    background: url(http://cdn.tns4.com/img/footer.jpg) repeat-x left bottom;
+    background: url(://cdn.tns4.com/img/footer.jpg) repeat-x left bottom;
     margin-top: 20px;
 }
 #foot{
     height: 145px;
     overflow: hidden;
-    background: url(http://cdn.tns4.com/img/foot.jpg) no-repeat bottom center;
+    background: url(://cdn.tns4.com/img/foot.jpg) no-repeat bottom center;
     font-size: 11px;
     color: #fff;
     line-height: 13px;
