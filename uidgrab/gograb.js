@@ -127,7 +127,6 @@ function goGrab() {
                 }
             }
         }
-        console.log(res);
         return res;
     }
 
